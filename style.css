@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+        body {
+            background-color: #000000;
+        }
+}
+
+.box-loading-container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 2em;
+    height: 2em;
+    margin: 1.5rem;
+    animation: rotate infinite 1s;
+    transform: rotate(45deg);
+}
+
+.box-one {
+    background: blue;
+}
+
+.box-two {
+    background: orange;
+}
+
+.box-three {
+    background: white;
+}
+
+@keyframes rotate {
+    
+    from {
+        transform: rotate(-45deg);
+    }
+
+    to {
+        transform: rotate(45deg);
+    }
+
+}
